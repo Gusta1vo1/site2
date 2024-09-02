@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping de Tênis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            flex: 1; /* Faz o container crescer e ocupar o espaço disponível */
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            gap: 10px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .price {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        .footer img {
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+            width: 30px;
+            margin: 0 15px;
+        }
+        .footer img:hover {
+            transform: scale(1.1);
+        }
+        /* Estilo do Menu */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li a img {
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        .promotion {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .promotion-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#colecao">Coleção</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#historia"><img src="icon-historia.png" alt="Ícone História">História</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Home -->
+    <div id="home" class="container">
+        <div class="section">
+            <h1>Coleção de Tênis</h1>
+            <hr>
+            <p>Explore nossa coleção de imagens de tênis. Aqui você encontrará fotos dos mais recentes modelos e designs inovadores no mundo do tênis. Aproveite!</p>
+        </div>
+
+        <!-- Seção Coleção -->
+        <div id="colecao" class="gallery">
+            <div class="gallery-item">
+                <img src="images (1).jfif" alt="Imagem 1">
+                <div class="price">R$ 299,99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images (2).jfif" alt="Imagem 2">
+                <div class="price">R$ 349,99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images (3).jfif" alt="Imagem 3">
+                <div class="price">R$ 279,99</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images (4).jfif" alt="Imagem 4">
+                <div class="price">R$ 399,99</div>
+            </div>
+            <!-- Adicione mais imagens e preços conforme necessário -->
+        </div>
+
+        <!-- Seção Promoções -->
+        <div id="promocoes" class="section">
+            <h2>Promoções</h2>
+            <hr>
+            <p>Fique de olho nas nossas ofertas especiais! Aproveite descontos incríveis em modelos selecionados.</p>
+            <div class="promotion">
+                <div class="promotion-item">
+                    <img src="velho.jfif" alt="Tênis Velho 1">
+                    <div class="price">R$ 199,99</div>
+                </div>
+                <div class="promotion-item">
+                    <img src="velho2.jfif" alt="Tênis Velho 2">
+                    <div class="price">R$ 179,99</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="https://www.instagram.com/seu_perfil" target="_blank">
+                <img src="insta.jfif" alt="Instagram">
+            </a>
+            <a href="https://wa.me/seu_numero" target="_blank">
+                <img src="what.jfif" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/seu_perfil" target="_blank">
+                <img src="face.png" alt="Facebook">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
